@@ -259,6 +259,49 @@ button {
   cursor: pointer;
 }
 
+/* .form {
+  width: 448px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-title {
+  position: absolute;
+  width: 448px;
+  height: 23px;
+  left: 576px;
+  top: 262px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.form-field {
+  outline: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+}
+
+.form-field input {
+  margin: 0;
+  padding: 0;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+} */
 /* Sections */
 
 .part {
