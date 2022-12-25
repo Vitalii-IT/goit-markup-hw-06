@@ -65,41 +65,50 @@
 
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <!-- <form class="form">
+          <form class="form">
             <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
-
             <div class="form-field">
-              <label for="name">Ім'я</label>
-              <input type="text" name="name" id="name" />
+              <label class="label" for="name">Ім'я</label>
+              <input class="input" type="text" name="name" id="name" />
+              <svg width="18px" height="18px" class="icon-form">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
             </div>
 
             <div class="form-field">
-              <label for="tel">Телефон</label>
-              <input type="tel" name="tel" id="tel" />
+              <label class="label" for="tel">Телефон</label>
+              <input class="input" type="tel" name="tel" id="tel" />
+              <svg width="18px" height="18px" class="icon-form">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
             </div>
 
-            <div class="form-field">
-              <label for="email">Пошта</label>
-              <input type="email" name="email" id="email" />
+            <div class="form-field check">
+              <label class="label" for="email">Пошта</label>
+              <input class="input" type="email" name="email" id="email" />
+              <svg width="18px" height="18px" class="icon-form">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
             </div>
 
-            <div class="form-field">
-              <label for="comment">Коментар</label>
-              <textarea
-                name="comment"
-                id="comment"
-                rows="10"
-                placeholder="Введіть текст"
-              ></textarea>
+            <div class="form-field comment-field">
+              <label class="label" for="comment">Коментар</label>
+              <textarea name="comment" id="comment" rows="7" placeholder="Введіть текст"></textarea>
             </div>
 
-            <div class="form-field">
-              <input type="checkbox" name="policy" id="policy" />
-              <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
-            </div>
+            <label class="checkbox-field">
+              <input class="checkbox" type="checkbox" name="policy" />
+              <svg class="icon-checkbox" width="16px" height="15px">
+                <use href=".//images/icons.svg#icon-checkbox"></use>
+              </svg>
+              <span class="policy-text"
+                >Погоджуюся з розсилкою та приймаю
+                <span class="policy-accent">Умови договору</span>
+              </span>
+            </label>
 
-            <button type="submit">Відправити</button>
-          </form> -->
+            <button class="send-button" type="submit">Відправити</button>
+          </form>
 
           <button class="close-button" data-modal-close>
             <svg width="30px" height="30px"><use href="./images/icons.svg#icon-close"></use></svg>
@@ -166,15 +175,15 @@
           <h2 class="part-title">Чим ми займаємося</h2>
           <ul class="job list">
             <li class="item">
-              <img src="./images/write.jpg" alt="верстаєм" width="370" height="294" class="pict" />
+              <img src="./images/write.jpg" alt="верстаєм" width="370" height="294" />
               <h3 class="job-title">Десктопні додатки</h3>
             </li>
             <li class="item">
-              <img src="./images/adapt.jpg" alt="адаптуєм" width="370" height="294" class="pict" />
+              <img src="./images/adapt.jpg" alt="адаптуєм" width="370" height="294" />
               <h3 class="job-title">Мобільні додатки</h3>
             </li>
             <li class="item">
-              <img src="./images/style.jpg" alt="стилізуєм" width="370" height="294" class="pict" />
+              <img src="./images/style.jpg" alt="стилізуєм" width="370" height="294" />
               <h3 class="job-title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -434,13 +443,20 @@
             </li>
           </ul>
         </div>
-      </div>
 
-      <form>
-        <label for="email">Підпишіться на розсилку</label>
-        <input type="email" name="email" id="email" />
-        <button type="submit">Підписатися</button>
-      </form>
+        <form class="lower-form">
+          <label for="mail">Підпишіться на розсилку</label>
+          <div>
+            <input type="email" name="email" id="mail" placeholder="E-mail" />
+            <button type="submit">
+              Підписатися
+              <svg class="icon-sign" width="24px" height="24px">
+                <use href=".//images/icons.svg#icon-sign"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
     </footer>
 
     <script src="./js/modal.js"></script>
