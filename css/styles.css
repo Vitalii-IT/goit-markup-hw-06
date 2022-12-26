@@ -269,6 +269,7 @@ button {
 
 .form-title {
   display: block;
+  margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -312,7 +313,7 @@ button {
 
 .form-field .icon-form {
   position: absolute;
-  bottom: 11px;
+  top: 50%;
   left: 12px;
   fill: #212121;
 
@@ -381,7 +382,6 @@ button {
 .checkbox:checked + .icon-checkbox {
   fill: none;
   background-image: url(../images/checked.svg);
-  
 }
 
 .icon-checkbox {
@@ -774,6 +774,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   background-color: var(--lower-bgc);
+  color: var(--bcg-color);
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
